@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>shengcheng_parent</artifactId>
+        <groupId>com.itcodes</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>shangcheng_service</artifactId>
+    <description>微服务父工程: 统一管理所有微服务</description>
+    <!--父工程下管理的微服务-->
+    <modules>
+        <module>shangcheng_service_goods</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <dependencies>
+        <!--通用mapper,分页插件依赖-->
+        <dependency>
+            <groupId>com.itcodes</groupId>
+            <artifactId>shangcheng_common_db</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>
